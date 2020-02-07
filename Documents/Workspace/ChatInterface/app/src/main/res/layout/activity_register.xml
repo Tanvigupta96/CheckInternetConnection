@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimagelogin"
+    tools:context=".Activities.RegisterActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:foregroundGravity="center"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+
+                <ImageView
+                    android:id="@+id/register_image"
+                    android:layout_width="@dimen/logo_w_h"
+                    android:layout_height="@dimen/logo_w_h"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/puchotech" />
+
+
+                <TextView
+                    android:id="@+id/registerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/login_image"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="REGISTER"
+                    android:textColor="#152525"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/register_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/register_image"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="17dp"
+                        android:backgroundTint="@color/Accent"
+                        android:drawableEnd="@drawable/email"
+                        android:hint="Email.."
+                        android:inputType="textEmailAddress"
+                        android:padding="4dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/Accent"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/register_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/register_email"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="17dp"
+                        android:backgroundTint="@color/Accent"
+                        android:drawableLeft="@drawable/email"
+                        android:drawableEnd="@drawable/password"
+                        android:hint="Password.."
+                        android:inputType="textPassword"
+                        android:padding="4dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/Accent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register_password"
+                    android:layout_marginTop="3dp"
+                    android:text="* Password must be 6 digits long!"
+                    android:textColor="#7E7D7E"
+                    android:textSize="12sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="4dp"/>
+
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+
+
+
+                        <Button
+                            android:id="@+id/register_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/already_have_account_link"
+                            android:background="@drawable/buttons"
+                            android:backgroundTint="@color/Accent"
+                            android:text="Create  Account"
+                            android:textAllCaps="true"
+                            android:layout_gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/already_have_account_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frame"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="23dp"
+                        android:gravity="end"
+                        android:text="Already have an account?"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </FrameLayout>
+
+</RelativeLayout>
